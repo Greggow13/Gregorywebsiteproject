@@ -1,0 +1,92 @@
+
+body{
+    background-color: grey;
+    font-size: 15px;
+    font-family:'Times New Romans';
+    font-weight: 50;
+    font-style: normal;
+    margin-top: 2pt;
+    margin-right: 0%;
+    padding-left: 2pt;
+    padding-right: 2pt;
+}
+
+li,a{
+    font-family: 'Times New Romans';
+    font-size: 15px;
+    color: black;
+    font-style: normal;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 50px 5%;
+}
+.logo{
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+}
+.nav_links{
+    list-style: none;
+
+}
+.nav_links li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+.nav_links li a{
+    transition: all 0.0s ease 0s;
+}
+.nav_links li a:hover{
+  color: #fbfeff;
+}
+.slider-frame{
+    overflow: hidden;
+    height: 600px;
+    width: 1000px;
+    margin-left:300px;
+    margin-top: 15px;
+
+}
+
+@-webkit-keyframes slide_animation{
+    0%{left:0px;}
+    10%{left:0px;}
+    20%{left:1200px;}
+    30%{left:1200px;}
+    40%{left:2400px;}
+    50%{left:2400px;}
+    60%{left:1200px;}
+    70%{left:1200px;}
+    80%{left:0px;}
+    90%{left:0px;}
+    100%{left:0px;}
+}
+
+.slide-images{
+    width: 2800px;
+    height:700px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 25s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: right;
+    -webkit-animation-play-state: running;
+}
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+img{
+    height: 400px;
+    width: 600px;
+}
+
+table{
+    color: rgb(255, 253, 253);
+}
